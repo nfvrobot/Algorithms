@@ -1,11 +1,11 @@
-package com.chernyavsky.multiThreading;
+package com.chernyavsky.multiThreading.fabric;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.chernyavsky.multiThreading.RandomUtil.RANDOM_COUNT;
+import static com.chernyavsky.multiThreading.fabric.RandomUtil.RANDOM_COUNT;
 
-public class SecondCrazy implements Runnable {
+public class FirstCrazy implements Runnable {
 
     private static final List<Details> state = new ArrayList<>();
 
@@ -22,7 +22,7 @@ public class SecondCrazy implements Runnable {
                 for (int j = 0; j < random; j++) {
                     state.add(Fabric.fabricGarbage.poll());
                 }
-                System.out.println("SecondCrazy robot brings " + random + " details");
+                System.out.println("FirstCrazy robot brings " + random + " details");
                 System.out.println();
                 try {
                     Fabric.fabricGarbage.wait(100L);

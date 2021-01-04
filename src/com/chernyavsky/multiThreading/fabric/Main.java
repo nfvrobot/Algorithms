@@ -1,4 +1,4 @@
-package com.chernyavsky.multiThreading;
+package com.chernyavsky.multiThreading.fabric;
 
 
 public class Main {

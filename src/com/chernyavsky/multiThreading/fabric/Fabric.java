@@ -1,9 +1,9 @@
-package com.chernyavsky.multiThreading;
+package com.chernyavsky.multiThreading.fabric;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-import static com.chernyavsky.multiThreading.RandomUtil.RANDOM_COUNT;
+import static com.chernyavsky.multiThreading.fabric.RandomUtil.RANDOM_COUNT;
 
 public class Fabric implements Runnable {
 
